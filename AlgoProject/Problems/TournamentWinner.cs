@@ -9,7 +9,6 @@ namespace AlgoProject.Problems
         public static string CalcWinner(List<List<string>> competitions, List<int> results)
         {
             Dictionary<string, int> comp = new Dictionary<string, int>();
-
             for (var i = 0; i < competitions.Count; i++)
             {
                 if (results[i] == 1)
@@ -35,7 +34,6 @@ namespace AlgoProject.Problems
                     }
                 }
             }
-
             var listOfKeys = comp.Keys;
             int highScore = 0;
             string winner = "";
@@ -48,7 +46,6 @@ namespace AlgoProject.Problems
                     highScore = comp[key];
                 }
             }
-
             return winner;  
         }
     }
